@@ -2,7 +2,7 @@
 
 This is a test repository that stores a random Covid dataset.
 
-The data cames from https://github.com/deepset-ai/COVID-QA and is subject to the following licence https://github.com/deepset-ai/COVID-QA/blob/master/LICENSE.
+The data comes from https://github.com/deepset-ai/COVID-QA and is subject to the following licence https://github.com/deepset-ai/COVID-QA/blob/master/LICENSE.
 
 # data
 The data contained in the csv files are separated by the **pipe** (**|**) character in the following format: `id|category|question|answer|datetime`.
