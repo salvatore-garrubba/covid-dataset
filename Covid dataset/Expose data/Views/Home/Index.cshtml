@@ -1,0 +1,65 @@
+﻿@using Expose_data.Models
+@model Expose_data.Models.ResultModel
+
+@{
+    ViewData["Title"] = "Homepage";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Covid dataset</h1>
+</div>
+<div>
+    <h3>Top 10 categories</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Category
+                </th>
+                <th>
+                    Nr times used
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.MostUsedCategories != null)
+            {
+                @foreach (var category in Model.MostUsedCategories)
+                {
+                    <tr>
+                        <td>@category.Key</td>
+                        <td>@category.Value</td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>
+
+<div>
+    <h3>Top 10 questions</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Question
+                </th>
+                <th>
+                    Nr times asked
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.MostAskedQuestions != null)
+            {
+                @foreach (var category in Model.MostAskedQuestions)
+                {
+                    <tr>
+                        <td>@category.Key</td>
+                        <td>@category.Value</td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>
